@@ -1,3 +1,4 @@
+import FeatureSection from "@/components/Features";
 import { ResizeableNavbar } from "@/components/Navbar";
 import ShapeHero from "@/components/ui/kokonutui/shape-hero";
 
@@ -7,6 +8,8 @@ export default function Home() {
       <div className="w-full">
         <ResizeableNavbar />
         <ShapeHero title1="Victoryu" title2="We Create an Art." />
+        <FeatureSection />
+        <div className="h-[50vh]" />
       </div>
     </main>
   );
