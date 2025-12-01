@@ -1,3 +1,7 @@
+"use client";
+
+import { cn } from "@/lib/utils";
+import { Pacifico } from "next/font/google";
 import React, { useState } from "react";
 
 // --- Data for the image accordion ---
@@ -33,6 +37,12 @@ const accordionItems = [
       "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?q=80&w=2070&auto=format&fit=crop",
   },
 ];
+
+const pacifico = Pacifico({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-pacifico",
+});
 
 // --- Accordion Item Component ---
 interface AccordionItemProps {
@@ -103,7 +113,17 @@ export function LandingAccordionItem() {
 
   return (
     <div className="font-sans">
-      <section className="container mx-auto px-4 py-12 md:py-24">
+      <section className="container mx-auto p-8">
+        <h1 className="text-2xl font-bold mb-6 md:mb-8 tracking-tight text-center md:text-start">
+          <span
+            className={cn(
+              "bg-clip-text text-transparent bg-linear-to-r from-indigo-300 via-black/90 to-rose-300 dark:from-indigo-300 dark:via-white/90 dark:to-rose-300",
+              pacifico.className
+            )}
+          >
+            Our Services.
+          </span>
+        </h1>
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           {/* Left Side: Text Content */}
           <div className="w-full md:w-1/2 text-center md:text-left">

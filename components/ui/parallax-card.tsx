@@ -86,7 +86,7 @@ const ParallaxTiltCard = React.forwardRef<
         transformStyle: "preserve-3d", // Enable 3D transformations for children
       }}
       className={cn(
-        "relative h-80 w-72 rounded-2xl bg-gradient-to-br from-primary/10 to-primary/30",
+        "relative h-80 w-72 rounded-2xl bg-linear-to-br from-primary/10 to-primary/30",
         "dark:from-primary/20 dark:to-primary/40",
         className
       )}

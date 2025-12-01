@@ -15,12 +15,12 @@ import { useState } from "react";
 export function ResizeableNavbar() {
   const navItems = [
     {
-      name: "Features",
-      link: "#features",
+      name: "Services",
+      link: "#services",
     },
     {
-      name: "Pricing",
-      link: "#pricing",
+      name: "Team",
+      link: "#team",
     },
     {
       name: "Contact",
