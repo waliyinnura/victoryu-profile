@@ -5,8 +5,8 @@ import { Input } from "./input";
 import { Textarea } from "./textarea";
 import { Checkbox } from "./checkbox";
 import { cn } from "@/lib/utils";
-import { Pacifico } from "next/font/google";
 import Image from "next/image";
+import { pacifico } from "../../lib/fonts";
 
 interface ContactSectionProps {
   /**
@@ -66,12 +66,6 @@ const defaultSocialLinks = [
     href: "#linkedin",
   },
 ];
-
-const pacifico = Pacifico({
-  subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font-pacifico",
-});
 
 export const ContactSection: React.FC<ContactSectionProps> = ({
   title = "We can turn your dream project into reality",
@@ -169,6 +163,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                         <Image
                           src={link.iconSrc}
                           alt={link.name}
+                          width={24}
+                          height={24}
                           className="h-4 w-4 dark:invert"
                         />
                       </a>

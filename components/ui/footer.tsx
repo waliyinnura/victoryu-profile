@@ -90,6 +90,8 @@ export const Footer = ({
                 <Image
                   src={logo.src}
                   alt={logo.alt}
+                  width={100}
+                  height={100}
                   title={logo.title}
                   className="h-8"
                 />

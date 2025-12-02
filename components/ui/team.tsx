@@ -2,12 +2,7 @@ import { cn } from "@/lib/utils";
 import { Pacifico } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-
-const pacifico = Pacifico({
-  subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font-pacifico",
-});
+import { pacifico } from "../../lib/fonts";
 
 const members = [
   {

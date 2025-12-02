@@ -43,7 +43,7 @@ const ContactUsSection: React.FC = () => {
       <ContactSection
         title="Let's build something amazing together!"
         mainMessage="Reach out to us today! ✨"
-        contactEmail="info@yourcompany.com"
+        contactEmail="email@victoryu.com"
         socialLinks={customSocialLinks}
         onSubmit={handleFormSubmit}
         // You can also change the background image

@@ -1,9 +1,9 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { Pacifico } from "next/font/google";
 import Image from "next/image";
 import React, { useState } from "react";
+import { pacifico } from "../../lib/fonts";
 
 // --- Data for the image accordion ---
 const accordionItems = [
@@ -39,12 +39,6 @@ const accordionItems = [
   },
 ];
 
-const pacifico = Pacifico({
-  subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font-pacifico",
-});
-
 // --- Accordion Item Component ---
 interface AccordionItemProps {
   item: {
@@ -74,6 +68,8 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
       <Image
         src={item.imageUrl}
         alt={item.title}
+        width={400}
+        height={450}
         className="absolute inset-0 w-full h-full object-cover"
         onError={(e) => {
           const target = e.target as HTMLImageElement;

@@ -11,15 +11,9 @@
  */
 
 import { motion } from "motion/react";
-import { Pacifico } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { Variants } from "motion/react";
-
-const pacifico = Pacifico({
-  subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font-pacifico",
-});
+import { pacifico } from "../../../lib/fonts";
 
 function ElegantShape({
   className,
