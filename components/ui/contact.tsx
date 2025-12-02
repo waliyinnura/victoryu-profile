@@ -6,6 +6,7 @@ import { Textarea } from "./textarea";
 import { Checkbox } from "./checkbox";
 import { cn } from "@/lib/utils";
 import { Pacifico } from "next/font/google";
+import Image from "next/image";
 
 interface ContactSectionProps {
   /**
@@ -37,7 +38,12 @@ interface ContactSectionProps {
    * Callback function when the form is submitted.
    * @param data The form data.
    */
-  onSubmit?: (data: any) => void;
+  onSubmit?: (data: {
+    name: string;
+    email: string;
+    message: string;
+    projectType: string[];
+  }) => void;
 }
 
 const defaultSocialLinks = [
@@ -69,7 +75,7 @@ const pacifico = Pacifico({
 
 export const ContactSection: React.FC<ContactSectionProps> = ({
   title = "We can turn your dream project into reality",
-  mainMessage = "Let's talk! 👋",
+  mainMessage = "Lets talk! 👋",
   contactEmail = "hello@pixelperfect.com",
   socialLinks = defaultSocialLinks,
   // backgroundImageSrc = "https://images.unsplash.com/photo-1742273330004-ef9c9d228530?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDY0fENEd3V3WEpBYkV3fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&q=60&w=900", // Example image from Unsplash
@@ -160,7 +166,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                     <Button key={link.id} variant="outline" size="icon" asChild>
                       <a href={link.href} aria-label={link.name}>
                         {/* Using a simple placeholder for icons. In a real app, use react-icons or SVG components */}
-                        <img
+                        <Image
                           src={link.iconSrc}
                           alt={link.name}
                           className="h-4 w-4 dark:invert"
@@ -206,12 +212,12 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
 
                 <div className="space-y-2">
                   <Label htmlFor="message">
-                    Briefly describe your project idea...
+                    Briefly describe your project idea
                   </Label>
                   <Textarea
                     id="message"
                     name="message"
-                    placeholder="Briefly describe your project idea..."
+                    placeholder="Briefly describe your project idea"
                     className="min-h-20"
                     value={formData.message}
                     onChange={handleChange}
@@ -220,7 +226,9 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                 </div>
 
                 <div className="space-y-4">
-                  <p className="text-muted-foreground">I'm looking for...</p>
+                  <p className="text-muted-foreground">
+                    I&apos;m looking for...
+                  </p>
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                     {projectTypeOptions.map((option) => (
                       <div key={option} className="flex items-center space-x-2">

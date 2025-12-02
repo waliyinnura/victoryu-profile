@@ -3,6 +3,7 @@ import * as React from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 // --- PROPS DEFINITION ---
 export interface ParallaxTiltCardProps {
@@ -106,7 +107,7 @@ const ParallaxTiltCard = React.forwardRef<
           }}
           className="relative h-full w-full"
         >
-          <img
+          <Image
             src={imageUrl}
             alt={title}
             className="pointer-events-none absolute -top-12 left-1/2 h-[120%] w-auto -translate-x-1/2 object-contain"

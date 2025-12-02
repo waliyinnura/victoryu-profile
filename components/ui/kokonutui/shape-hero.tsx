@@ -13,6 +13,7 @@
 import { motion } from "motion/react";
 import { Pacifico } from "next/font/google";
 import { cn } from "@/lib/utils";
+import { Variants } from "motion/react";
 
 const pacifico = Pacifico({
   subsets: ["latin"],
@@ -98,7 +99,7 @@ export default function ShapeHero({
   title1?: string;
   title2?: string;
 }) {
-  const fadeUpVariants = {
+  const fadeUpVariants: Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: (i: number) => ({
       opacity: 1,
@@ -210,7 +211,7 @@ export default function ShapeHero({
         <div className="max-w-3xl mx-auto text-center">
           <motion.div
             custom={1}
-            variants={fadeUpVariants as any}
+            variants={fadeUpVariants}
             initial="hidden"
             animate="visible"
           >
@@ -231,7 +232,7 @@ export default function ShapeHero({
           </motion.div>
           <motion.div
             custom={2}
-            variants={fadeUpVariants as any}
+            variants={fadeUpVariants}
             initial="hidden"
             animate="visible"
           >

@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import { Pacifico } from "next/font/google";
+import Image from "next/image";
 import React, { useState } from "react";
 
 // --- Data for the image accordion ---
@@ -70,7 +71,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
       onMouseEnter={onMouseEnter}
     >
       {/* Background Image */}
-      <img
+      <Image
         src={item.imageUrl}
         alt={item.title}
         className="absolute inset-0 w-full h-full object-cover"

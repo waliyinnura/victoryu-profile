@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { Pacifico } from "next/font/google";
+import Image from "next/image";
 import Link from "next/link";
 
 const pacifico = Pacifico({
@@ -56,7 +57,7 @@ export default function TeamSection() {
           <div className="grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
             {members.map((member, index) => (
               <div key={index} className="group overflow-hidden">
-                <img
+                <Image
                   className="h-96 w-full rounded-md object-cover object-top grayscale transition-all duration-500 hover:grayscale-0 group-hover:h-90 group-hover:rounded-xl"
                   src={member.avatar}
                   alt="team member"

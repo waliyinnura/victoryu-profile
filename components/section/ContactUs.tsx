@@ -22,7 +22,12 @@ const ContactUsSection: React.FC = () => {
     },
   ];
 
-  const handleFormSubmit = (data: any) => {
+  const handleFormSubmit = (data: {
+    name: string;
+    email: string;
+    message: string;
+    projectType: string[];
+  }) => {
     alert("Demo form submitted! Check console for data.");
     console.log("Demo form data:", data);
     // In a real application, you'd send this data to an API
