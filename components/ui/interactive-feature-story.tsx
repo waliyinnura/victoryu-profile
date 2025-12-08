@@ -128,8 +128,8 @@ export function LandingAccordionItem() {
               Accelerate Gen-AI Tasks on Any Device
             </h1>
             <p className="mt-6 text-lg max-w-xl mx-auto md:mx-0">
-              Build high-performance AI apps on-device without the hassle of
-              model compression or edge deployment.
+              Build high-performance apps on-device without the hassle of model
+              compression or edge deployment.
             </p>
             {/* <div className="mt-8">
               <a

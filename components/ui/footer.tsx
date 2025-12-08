@@ -68,8 +68,8 @@ const defaultLegalLinks = [
 
 export const Footer = ({
   logo = {
-    url: "https://www.shadcnblocks.com",
-    src: "https://www.shadcnblocks.com/images/block/logos/shadcnblockscom-icon.svg",
+    url: "#",
+    src: "/logo-victoryu.png",
     alt: "logo",
     title: "Victoryu",
   },
@@ -93,7 +93,7 @@ export const Footer = ({
                   width={100}
                   height={100}
                   title={logo.title}
-                  className="h-8"
+                  className="h-8 w-auto object-contain"
                 />
               </a>
               <h2 className="text-xl font-semibold">{logo.title}</h2>
