@@ -93,7 +93,7 @@ export const Footer = ({
                   width={100}
                   height={100}
                   title={logo.title}
-                  className="h-8 w-auto object-contain"
+                  className="h-8 w-auto object-contain rounded-md"
                 />
               </a>
               <h2 className="text-xl font-semibold">{logo.title}</h2>

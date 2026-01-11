@@ -6,6 +6,9 @@ import { geistMono, geistSans } from "@/lib/fonts";
 export const metadata: Metadata = {
   title: "Victoryu Tech",
   description: "We Create an Art",
+  icons: {
+    icon: "/public/victoryu-icon.png",
+  },
 };
 
 export default function RootLayout({

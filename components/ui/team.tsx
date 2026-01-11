@@ -1,25 +1,25 @@
 import { cn } from "@/lib/utils";
-import { Pacifico } from "next/font/google";
+// import { Pacifico } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { pacifico } from "../../lib/fonts";
 
 const members = [
   {
-    name: "Liam Brown",
+    name: "Rafi Hafied Fathoni",
     role: "Founder - CEO",
     avatar: "https://alt.tailus.io/images/team/member-one.webp",
     link: "#",
   },
   {
-    name: "Elijah Jones",
+    name: "Waliyin Nur Adli",
     role: "Co-Founder - CTO",
     avatar: "https://alt.tailus.io/images/team/member-two.webp",
     link: "#",
   },
   {
-    name: "Isabella Garcia",
-    role: "Sales Manager",
+    name: "Hibban Abdurrahman Faries",
+    role: "Graphic Designer",
     avatar: "https://alt.tailus.io/images/team/member-three.webp",
     link: "#",
   },
@@ -64,7 +64,7 @@ export default function TeamSection() {
                     <h3 className="text-title text-base font-medium transition-all duration-500 group-hover:tracking-wider">
                       {member.name}
                     </h3>
-                    <span className="text-xs">_0{index + 1}</span>
+                    {/* <span className="text-xs">_0{index + 1}</span> */}
                   </div>
                   <div className="mt-1 flex items-center justify-between">
                     <span className="text-muted-foreground inline-block translate-y-6 text-sm opacity-0 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100">

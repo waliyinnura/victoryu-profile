@@ -236,7 +236,13 @@ export const NavbarLogo = () => {
       href="#hero"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
     >
-      <Image src="/logo-victoryu.png" alt="logo" width={30} height={30} />
+      <Image
+        src="/logo-victoryu.png"
+        alt="logo"
+        width={30}
+        height={30}
+        className="rounded-md"
+      />
       <span className="font-medium text-black dark:text-white">Victoryu</span>
     </a>
   );
