@@ -8,19 +8,19 @@ const members = [
   {
     name: "Rafi Hafied Fathoni",
     role: "Founder - CEO",
-    avatar: "https://alt.tailus.io/images/team/member-one.webp",
+    avatar: "/om afi.png",
     link: "#",
   },
   {
     name: "Waliyin Nur Adli",
     role: "Co-Founder - CTO",
-    avatar: "https://alt.tailus.io/images/team/member-two.webp",
+    avatar: "/adli.png",
     link: "#",
   },
   {
     name: "Hibban Abdurrahman Faries",
-    role: "Graphic Designer",
-    avatar: "https://alt.tailus.io/images/team/member-three.webp",
+    role: "Co-Founder - Graphic Designer",
+    avatar: "/hibban.png",
     link: "#",
   },
 ];

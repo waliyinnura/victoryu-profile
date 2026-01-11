@@ -108,6 +108,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
   };
 
   const projectTypeOptions = [
+    "Game",
+    "Software",
     "Website",
     "Mobile App",
     "Web App",

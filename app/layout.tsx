@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Victoryu Tech",
   description: "We Create an Art",
   icons: {
-    icon: "/public/victoryu-icon.png",
+    icon: "/victoryu-icon.png",
   },
 };
 

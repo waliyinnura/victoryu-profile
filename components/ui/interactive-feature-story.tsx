@@ -8,22 +8,10 @@ import { pacifico } from "../../lib/fonts";
 // --- Data for the image accordion ---
 const accordionItems = [
   {
-    id: 1,
-    title: "Game Development",
+    id: 5,
+    title: "UI/UX Designer",
     imageUrl:
-      "https://images.unsplash.com/photo-1628258334105-2a0b3d6efee1?q=80&w=1974&auto=format&fit=crop",
-  },
-  {
-    id: 2,
-    title: "Software App Development",
-    imageUrl:
-      "https://images.unsplash.com/photo-1677756119517-756a188d2d94?q=80&w=2070&auto=format&fit=crop",
-  },
-  {
-    id: 3,
-    title: "Software Web Development",
-    imageUrl:
-      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1974&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?q=80&w=2070&auto=format&fit=crop",
   },
   {
     id: 4,
@@ -32,10 +20,22 @@ const accordionItems = [
       "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=2090&auto=format&fit=crop",
   },
   {
-    id: 5,
-    title: "UI/UX Designer",
+    id: 3,
+    title: "Software Web Development",
     imageUrl:
-      "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1974&auto=format&fit=crop",
+  },
+  {
+    id: 2,
+    title: "Software App Development",
+    imageUrl:
+      "https://images.unsplash.com/photo-1677756119517-756a188d2d94?q=80&w=2070&auto=format&fit=crop",
+  },
+  {
+    id: 1,
+    title: "Game Development",
+    imageUrl:
+      "https://images.unsplash.com/photo-1628258334105-2a0b3d6efee1?q=80&w=1974&auto=format&fit=crop",
   },
 ];
 
@@ -125,11 +125,11 @@ export function LandingAccordionItem() {
           {/* Left Side: Text Content */}
           <div className="w-full md:w-1/2 text-center md:text-left">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight tracking-tighter">
-              Accelerate Gen-AI Tasks on Any Device
+              We Build Digital Products That Drive Real Impact
             </h1>
             <p className="mt-6 text-lg max-w-xl mx-auto md:mx-0">
-              Build high-performance apps on-device without the hassle of model
-              compression or edge deployment.
+              We create user-focused designs and robust applications that
+              transform ideas into powerful digital products.
             </p>
             {/* <div className="mt-8">
               <a
